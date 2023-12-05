@@ -42,3 +42,8 @@ types:
                             type: AmericanFlight
                             examples:
                                 output: !include examples/AmericanFlightExample.raml
+                404:
+                    body:
+                        application/json:
+                            example:
+                                message: Resource not found
