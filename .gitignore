@@ -1,2 +1,8 @@
 exchange_modules/
 .exchange_modules_tmp/
+.apivcs
+.mvn
+config.properties
+.vscode
+.exchange.xml
+*.code-workspace
