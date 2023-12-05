@@ -18,10 +18,12 @@
     }
   ],
   "version": "1.0.0",
+  "apiVersion": "v1",
   "descriptorVersion": "1.0.0",
   "classifier": "raml",
   "main": "american-flights-system-api.raml",
   "assetId": "american-flights-system-api",
   "groupId": "5ea4b9e3-519e-46df-b99c-456aad38e08c",
+  "organizationId": "5ea4b9e3-519e-46df-b99c-456aad38e08c",
   "name": "american-flights-system-api"
 }
