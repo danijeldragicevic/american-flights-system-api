@@ -5,9 +5,12 @@ types:
     AmericanFlight: !include types/AmericanFlightDataType.raml
 
 /flights:
+    description: The `/flights` resource represents a collection of flights.
     get:
+        description: Retrieve a list of flights based on optional query parameters.
         queryParameters:
             destination:
+                description: Filter flights by destination
                 required: false
                 enum:
                     - SFO
@@ -21,6 +24,7 @@ types:
                         examples:
                             output: !include  examples/AmericanFlightsExample.raml
     post:
+        description: Create a new flight.
         body:
             application/json:
                 type: AmericanFlight
@@ -34,7 +38,9 @@ types:
                             message: Flight successfully created
 
     /{ID}:
+        description: The `/flights/{ID}` resource represents an individual flight identified by its unique ID.
         get:
+            description: Retrieve details for a specific flight identified by the provided ID.
             responses:
                 200:
                     body:
