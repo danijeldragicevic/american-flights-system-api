@@ -2,7 +2,7 @@
 title: American Flights System API
 
 types:
-    AmericanFlight: !include exchange_modules/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flight-data-type/1.0.1/AmericanFlightDataType.raml
+    AmericanFlight: !include types/AmericanFlightDataType.raml
 
 /flights:
     get:
@@ -19,7 +19,7 @@ types:
                     application/json:
                         type: AmericanFlight[]
                         examples:
-                            output: !include exchange_modules/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flights-example/1.0.1/AmericanFlightsExample.raml
+                            output: !include  examples/AmericanFlightsExample.raml
     post:
         body:
             application/json:
@@ -31,7 +31,7 @@ types:
                 body:
                     application/json:
                         example:
-                            message: Flight added (but not really)
+                            message: Flight successfully created
 
     /{ID}:
         get:
