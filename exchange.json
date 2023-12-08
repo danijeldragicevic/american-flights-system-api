@@ -2,18 +2,8 @@
   "dependencies": [
     {
       "version": "1.0.1",
-      "classifier": "raml-fragment",
-      "assetId": "training-american-flight-data-type",
-      "groupId": "68ef9520-24e9-4cf2-b2f5-620025690913",
-      "packaging": "zip",
-      "provided": false
-    },
-    {
-      "version": "1.0.1",
-      "classifier": "raml-fragment",
       "assetId": "training-american-flights-example",
       "groupId": "68ef9520-24e9-4cf2-b2f5-620025690913",
-      "packaging": "zip",
       "provided": false
     }
   ],
