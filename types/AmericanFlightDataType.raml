@@ -6,8 +6,13 @@ properties:
     code: string
     price: number
     departureDate: string
-    origin: string
-    destination: string
+    origin:
+        type: string
+        minLength: 3
+        maxLength: 3
+    destination:
+        type: string
+        enum: ['SFO', 'LAX', 'CLE']
     emptySeats: integer
     plane:
         type: object

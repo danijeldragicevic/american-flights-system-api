@@ -7,7 +7,7 @@ traits:
   errorTraits: !include traits/errorTraits.raml
 
 /flights:
-    description: Resource represents a collection of flights.
+    description: Resource **/flights** represents a collection of flights.
     get:
         description: Retrieve a list of flights based on optional query parameters.
         is: [errorTraits]
@@ -15,10 +15,7 @@ traits:
             destination:
                 description: Filter flights by destination
                 required: false
-                enum:
-                    - SFO
-                    - LAX
-                    - CLE
+                enum: ['SFO', 'LAX', 'CLE']
         responses:
             200:
                 body:
@@ -43,7 +40,7 @@ traits:
                             message: Flight successfully created
 
     /{ID}:
-        description: Resource represents an individual flight identified by its unique ID.
+        description: Resource **/flights/{ID}** represents an individual flight identified by its unique ID.
         get:
             description: Retrieve details for a specific flight identified by the provided ID.
             is: [errorTraits]
