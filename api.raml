@@ -3,19 +3,19 @@ title: American Flights System API
 
 types:
     AmericanFlight: !include types/AmericanFlightDataType.raml
+traits:
+  errorTraits: !include traits/errorTraits.raml
 
 /flights:
-    description: The `/flights` resource represents a collection of flights.
+    description: Resource **/flights** represents a collection of flights.
     get:
         description: Retrieve a list of flights based on optional query parameters.
+        is: [errorTraits]
         queryParameters:
             destination:
                 description: Filter flights by destination
                 required: false
-                enum:
-                    - SFO
-                    - LAX
-                    - CLE
+                enum: ['SFO', 'LAX', 'CLE']
         responses:
             200:
                 body:
@@ -23,8 +23,10 @@ types:
                         type: AmericanFlight[]
                         examples:
                             output: !include  examples/AmericanFlightsExample.raml
+            
     post:
         description: Create a new flight.
+        is: [errorTraits]
         body:
             application/json:
                 type: AmericanFlight
@@ -38,9 +40,10 @@ types:
                             message: Flight successfully created
 
     /{ID}:
-        description: The `/flights/{ID}` resource represents an individual flight identified by its unique ID.
+        description: Resource **/flights/{ID}** represents an individual flight identified by its unique ID.
         get:
             description: Retrieve details for a specific flight identified by the provided ID.
+            is: [errorTraits]
             responses:
                 200:
                     body:
@@ -48,8 +51,3 @@ types:
                             type: AmericanFlight
                             examples:
                                 output: !include examples/AmericanFlightExample.raml
-                404:
-                    body:
-                        application/json:
-                            example:
-                                message: Resource not found
