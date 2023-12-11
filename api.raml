@@ -1,14 +1,11 @@
 #%RAML 1.0
 title: American Flights System API
 
-securitySchemes:
-    bearer: !include securitySchemes/Bearer.raml
 types:
     AmericanFlight: !include types/AmericanFlightDataType.raml
 traits:
   errorTraits: !include traits/ErrorTraits.raml
 
-securedBy: [bearer]
 /flights:
     description: Resource **/flights** represents a collection of flights.
     get:
@@ -25,8 +22,7 @@ securedBy: [bearer]
                     application/json:
                         type: AmericanFlight[]
                         examples:
-                            output: !include  examples/AmericanFlightsExample.raml
-            
+                            output: !include  examples/AmericanFlightsExample.raml        
     post:
         description: Create a new flight.
         is: [errorTraits]
@@ -54,3 +50,12 @@ securedBy: [bearer]
                             type: AmericanFlight
                             examples:
                                 output: !include examples/AmericanFlightExample.raml
+        delete:
+            description: Delete specific flight identified by the provided ID,
+            is: [errorTraits]
+            responses:
+                200:
+                    body:
+                        application/json:
+                            example:
+                                message: Flight successfully deleted 
