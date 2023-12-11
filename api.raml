@@ -2,19 +2,17 @@
 title: American Flights System API
 
 securitySchemes:
-    basic:
-        description: This API supports Basic authentication
-        type: Basic Authentication
+    bearer: !include securitySchemes/Bearer.raml
 types:
     AmericanFlight: !include types/AmericanFlightDataType.raml
 traits:
-  errorTraits: !include traits/errorTraits.raml
+  errorTraits: !include traits/ErrorTraits.raml
 
+securedBy: [bearer]
 /flights:
     description: Resource **/flights** represents a collection of flights.
     get:
         description: Retrieve a list of flights based on optional query parameters.
-        securedBy: [basic]
         is: [errorTraits]
         queryParameters:
             destination:
@@ -31,7 +29,6 @@ traits:
             
     post:
         description: Create a new flight.
-        securedBy: [basic]
         is: [errorTraits]
         body:
             application/json:
@@ -49,7 +46,6 @@ traits:
         description: Resource **/flights/{ID}** represents an individual flight identified by its unique ID.
         get:
             description: Retrieve details for a specific flight identified by the provided ID.
-            securedBy: [basic]
             is: [errorTraits]
             responses:
                 200:
