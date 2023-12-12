@@ -1,6 +1,10 @@
 #%RAML 1.0
 title: American Flights System API
 
+securitySchemes:
+    basicAuth:
+        description: Need to provide Client ID and Client Secret obtained by the Anypoint Platform
+        type: Basic Authentication
 types:
     AmericanFlight: !include types/AmericanFlightDataType.raml
 traits:
