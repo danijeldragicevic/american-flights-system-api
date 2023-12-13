@@ -3,13 +3,14 @@ title: American Flights System API
 
 securitySchemes:
     basicAuth:
-        description: Need to provide Client ID and Client Secret obtained by the Anypoint Platform
+        description: Need to provide Client ID and Client Secret obtained from the Anypoint Platform
         type: Basic Authentication
 types:
     AmericanFlight: !include types/AmericanFlightDataType.raml
 traits:
   errorTraits: !include traits/ErrorTraits.raml
 
+securedBy: [basicAuth]
 /flights:
     description: Resource **/flights** represents a collection of flights.
     get:
