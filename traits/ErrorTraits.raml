@@ -4,29 +4,36 @@ responses:
     400:
         body:
             application/json:
-                example: {"message": "Bad Request"}
+                example: {"error": "Bad Request"}
+    401:
+        body:
+            application/json:
+                example: {"error": "Invalid Client"}
     404:
         body:
             application/json:
-                example: {"message": "Resource not found"}
+                example: {"error": "Resource not found"}
     405:
         body:
             application/json:
-                example: {"message": "Method not allowed"}
+                example: {"error": "Method not allowed"}
     406:
         body:
             application/json:
-                example: {"message": "Not acceptable"}
+                example: {"error": "Not acceptable"}
     415:
         body:
             application/json:
-                example: {"message": "Unsuporrted media type"}
+                example: {"error": "Unsuporrted media type"}
+    429:
+        body:
+            application/json:
+                example: {"error": "Quota has been exceeded"}
     500:
         body:
             application/json:
-                example: {"message": "Internal server error"}
+                example: {"error": "Internal server error"}
     501:
         body:
             application/json:
-                example: {"message": "Not implemented"}
-
+                example: {"error": "Not implemented"}
