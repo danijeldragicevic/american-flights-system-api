@@ -135,7 +135,6 @@ Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced
 # Error Handling
 Every endpoint can throw some of those errors. Please make sure to handle errors appropriately in your client application.
 ```
-responses:
   400:
       body:
           application/json:
