@@ -14,7 +14,7 @@ In case you don't want to bother, here are demo credentials that can be used:
 - Client Secret: aAe889fE76d849a39c1fF0bd3d958882
 
 This API is subject to a Rate Limit Policy regulation. Only 20 requests per munte are permitted to all endpoints. <br>
-Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced data will be destroyed.
+Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced data will be replaced with the new one.
 <br><br>
 
 # Endpoints
