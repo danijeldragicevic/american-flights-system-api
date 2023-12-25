@@ -4,9 +4,6 @@ Welcome to the American Flights System API documentation. This API allows you to
 ## Demo Disclaimer
 This API is a demo created for educational purposes and is associated with a blog post. It may not represent a fully functional or production-ready system. Please refer to the [blog post](https://www.example.com/blog-post) for insights into the concepts and use cases demonstrated by this API.
 
-## Base URL
-The base URL for the API is [base_url](https://american-flights-system-proxy-app-ha5esl.5sc6y6-3.usa-e2.cloudhub.io/api). Ensure that you authenticate your requests and use the appropriate API endpoint.
-
 ## Authentication
 This API is secured using Basic Authentication. To access the API, you need to provide the Client ID and Client Secret obtained from the Anypoint Platform.
 In case you don't want to bother, here are demo credentials that can be used:
@@ -15,7 +12,14 @@ In case you don't want to bother, here are demo credentials that can be used:
 
 This API is subject to a Rate Limit Policy regulation. Only 20 requests per munte are permitted to all endpoints. <br>
 Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced data will be replaced with the new one.
-<br><br>
+<br>
+
+## To test the API
+There is a public portal where you can test this API against the Mocking Service or backend application that implements it.
+Please follow this link to create the account and request access to the API (or just use demo credentials from above):
+- [API Developer Portal](https://anypoint.mulesoft.com/exchange/portals/productdock-48/)
+
+<br>
 
 # Endpoints
 ### Get Flights
