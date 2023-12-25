@@ -73,7 +73,7 @@ Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced
   {
     "code": "rree0001",
     "price": 541.99,
-    "departureDate": "2017-07-26",
+    "departureDate": "2023-12-20",
     "origin": "MUA",
     "destination": "LAX",
     "emptySeats": 0,
