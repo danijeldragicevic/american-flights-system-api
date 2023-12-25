@@ -35,27 +35,27 @@ Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced
     {
       "ID": 1,
       "code": "rree0001",
-      "price": 400.99,
-      "departureDate": "2017-07-26",
+      "price": 541.99,
+      "departureDate": "2023-12-20",
       "origin": "MUA",
-      "destination": "SFO",
+      "destination": "LAX",
       "emptySeats": 0,
       "plane": {
-        "type": "Boeing 737",
-        "totalSeats": 150
+        "type": "Boeing 787",
+        "totalSeats": 200
       }
     },
     {
       "ID": 2,
       "code": "eefd0123",
-      "price": 540.99,
-      "departureDate": "2017-07-27",
+      "price": 300.99,
+      "departureDate": "2023-12-20",
       "origin": "MUA",
-      "destination": "LAX",
-      "emptySeats": 54,
+      "destination": "CLE",
+      "emptySeats": 7,
       "plane": {
-        "type": "Boeing 777",
-        "totalSeats": 300
+        "type": "Boeing 747",
+        "totalSeats": 345
       }
     }
   ]
@@ -72,14 +72,14 @@ Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced
   ```
   {
     "code": "rree0001",
-    "price": 400.99,
+    "price": 541.99,
     "departureDate": "2017-07-26",
     "origin": "MUA",
-    "destination": "SFO",
+    "destination": "LAX",
     "emptySeats": 0,
     "plane": {
-      "type": "Boeing 737",
-      "totalSeats": 150
+      "type": "Boeing 787",
+      "totalSeats": 200
     }
   }
   ```
@@ -106,14 +106,14 @@ Also, daily database cleanup scheduler is in place. At 05:00AM UTC, all produced
   {
     "ID": 1,
     "code": "rree0001",
-    "price": 400.99,
-    "departureDate": "2017-07-26",
+    "price": 541.99,
+    "departureDate": "2023-12-20",
     "origin": "MUA",
-    "destination": "SFO",
+    "destination": "LAX",
     "emptySeats": 0,
     "plane": {
-      "type": "Boeing 737",
-      "totalSeats": 150
+      "type": "Boeing 787",
+      "totalSeats": 200
     }
   }
   ```
