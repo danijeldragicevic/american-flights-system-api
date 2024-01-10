@@ -5,8 +5,10 @@ Welcome to the American Flights System API documentation. This API allows you to
 This API is a demo created for educational purposes and is associated with a blog post. It is not representing a fully functional or production-ready system. Please refer to the [blog post](https://www.example.com/blog-post) for insights into the concepts and use cases demonstrated by this API.
 
 ## To test the API
-There is a public portal where you can test this API against the Mocking Service.
+Explore the functionality through the user-friendly public portal:
 - [API Developer Portal](https://anypoint.mulesoft.com/exchange/portals/productdock-48/)
+
+The API is secured using Basic Authentication. Feel free to use any string as both the username and password when interacting with the Mocking Service.
 
 <br>
 
