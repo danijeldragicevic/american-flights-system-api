@@ -2,7 +2,7 @@
 Welcome to the American Flights System API documentation. This API allows you to interact with a collection of flights, providing functionalities to retrieve a list of flights, create new flights, access details for specific flights and delete the flight.
 
 ## Demo Disclaimer
-This API is a demo created for educational purposes and is associated with a blog post. It is not representing a fully functional or production-ready system. Please refer to the [blog post](https://www.example.com/blog-post) for insights into the concepts and use cases demonstrated by this API.
+This API is a demo created for educational purposes and is associated with a blog post. It is not representing a fully functional or production-ready system. Please refer to the [blog post](https://productdock.com/exploring-the-future-of-integration-a-developers-dive-into-anypoint-code-builder-beta/) for insights into the concepts and use cases demonstrated by this API.
 
 ## To test the API
 Explore the functionality through the user-friendly public portal:
